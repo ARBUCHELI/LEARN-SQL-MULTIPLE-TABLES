@@ -97,10 +97,52 @@ INSERT INTO subscriptions (subscription_id, description, price_per_month, subscr
 VALUES (8, 'Sports Magazine', 12, '6 months');
 
 INSERT INTO subscriptions (subscription_id, description, price_per_month, subscription_length)
-VALUES (9, 'Sports Magazine', 13, '3 months');*/
+VALUES (9, 'Sports Magazine', 13, '3 months');
 
+CREATE TABLE customers (
+    customer_id INT,
+    customer_name VARCHAR(256),
+    address VARCHAR(256)
+)
 
+INSERT INTO customers (customer_id, customer_name, address)
+VALUES (1, 'Allie Rahaim', '123 Broadway');
 
+INSERT INTO customers (customer_id, customer_name, address)
+VALUES (2, 'Jacquline Diddle', '456 Park Ave.');
+
+INSERT INTO customers (customer_id, customer_name, address)
+VALUES (3, 'Lizabeth Letsche', '789 Main St.');
+
+INSERT INTO customers (customer_id, customer_name, address)
+VALUES (4, 'Jessia Butman', '1 Columbus Ave.');
+
+INSERT INTO customers (customer_id, customer_name, address)
+VALUES (5, 'Inocencia Goyco', '12 Amsterdam Ave.');
+
+INSERT INTO customers (customer_id, customer_name, address)
+VALUES (6, 'Bethann Schraub', '29 Monticello');
+
+INSERT INTO customers (customer_id, customer_name, address)
+VALUES (7, 'Janay Priolo', '81 Harrisburg');
+
+INSERT INTO customers (customer_id, customer_name, address)
+VALUES (8, 'Ophelia Sturdnant', '31 Deerfield Ave.');
+
+INSERT INTO customers (customer_id, customer_name, address)
+VALUES (9, 'Eryn Vilar', '56 Morton St.');
+
+INSERT INTO customers (customer_id, customer_name, address)
+VALUES (10, 'Jina Farraj', '100 Bryan Ave.');*/
+
+SELECT *
+FROM orders;
+
+SELECT *
+FROM subscriptions;
+
+SELECT *
+FROM customers;
 
 
 
