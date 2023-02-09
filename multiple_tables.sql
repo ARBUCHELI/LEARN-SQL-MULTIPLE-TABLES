@@ -63,7 +63,45 @@ INSERT INTO orders (order_id, customer_id, subscription_id, purchase_date)
 VALUES (19, 4, 9, '01-3-2017');
 
 INSERT INTO orders (order_id, customer_id, subscription_id, purchase_date)
-VALUES (20, 1, 7, '01-24-2017');*/
+VALUES (20, 1, 7, '01-24-2017');
+
+CREATE TABLE subscriptions (
+    subscription_id INT,
+    description VARCHAR(256),
+    price_per_month INT,
+    subscription_length TEXT
+)*
+
+INSERT INTO subscriptions (subscription_id, description, price_per_month, subscription_length)
+VALUES (1, 'Politics Magazine', 10, '12 months');
+
+INSERT INTO subscriptions (subscription_id, description, price_per_month, subscription_length)
+VALUES (2, 'Politics Magazine', 11, '6 months');
+
+INSERT INTO subscriptions (subscription_id, description, price_per_month, subscription_length)
+VALUES (3, 'Politics Magazine', 12, '3 months');
+
+INSERT INTO subscriptions (subscription_id, description, price_per_month, subscription_length)
+VALUES (4, 'Fashion Magazine', 15, '12 months');
+
+INSERT INTO subscriptions (subscription_id, description, price_per_month, subscription_length)
+VALUES (5, 'Fashion Magazine', 17, '6 months');
+
+INSERT INTO subscriptions (subscription_id, description, price_per_month, subscription_length)
+VALUES (6, 'Fashion Magazine', 19, '3 months');
+
+INSERT INTO subscriptions (subscription_id, description, price_per_month, subscription_length)
+VALUES (7, 'Sports Magazine', 11, '12 months');
+
+INSERT INTO subscriptions (subscription_id, description, price_per_month, subscription_length)
+VALUES (8, 'Sports Magazine', 12, '6 months');
+
+INSERT INTO subscriptions (subscription_id, description, price_per_month, subscription_length)
+VALUES (9, 'Sports Magazine', 13, '3 months');*/
+
+
+
+
 
 
 
