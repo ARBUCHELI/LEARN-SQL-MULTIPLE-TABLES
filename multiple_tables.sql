@@ -243,7 +243,7 @@ INSERT INTO online (id, first_name, last_name, email, start_month, end_month)
 VALUES (31446, 'Collin', 'Dobos', 'CollinDobos57@coldmail.com', 3, 5);
 
 INSERT INTO online (id, first_name, last_name, email, start_month, end_month)
-VALUES (47660, 'Stephnie', 'Alsberry', 'StephnieAlsberry43@coldmail.com', 3, 5);*/
+VALUES (47660, 'Stephnie', 'Alsberry', 'StephnieAlsberry43@coldmail.com', 3, 5);
 
 SELECT *
 FROM newspaper;
@@ -261,5 +261,112 @@ SELECT COUNT(*)
 FROM newspaper
 JOIN online
   ON newspaper.id = online.id;
+
+SELECT *
+FROM newspaper
+LEFT JOIN online
+  ON newspaper.id = online.id;
+
+SELECT *
+FROM newspaper
+LEFT JOIN online
+  ON newspaper.id = online.id
+  WHERE online.id IS NULL;
+
+CREATE TABLE classes (
+  id INT, 
+  description VARCHAR(256),
+  weeks INT,
+  enrollment_cap INT
+)
+
+INSERT INTO classes (id, description, weeks, enrollment_cap)
+VALUES (1, 'Intro to Javascript', 10, 30);
+
+INSERT INTO classes (id, description, weeks, enrollment_cap)
+VALUES (2, 'Intro to Python', 12, 35);
+
+INSERT INTO classes (id, description, weeks, enrollment_cap)
+VALUES (3, 'Intermediate SQL', 8, 32);
+
+INSERT INTO classes (id, description, weeks, enrollment_cap)
+VALUES (4, 'D3-js for Beginners', 6, 35);
+
+INSERT INTO classes (id, description, weeks, enrollment_cap)
+VALUES (5, 'Probability and Statistics', 10, 31);
+
+CREATE TABLE students (
+  id INT, 
+  first_name VARCHAR(256),
+  last_name VARCHAR(256),
+  email VARCHAR(256),
+  class_id INTEGER
+)
+
+INSERT INTO students (id, first_name, last_name, email, class_id)
+VALUES (74262, 'Berry', 'Bartelson', 'Berry.Bartelson@gsnail.com', 3);
+
+INSERT INTO students (id, first_name, last_name, email, class_id)
+VALUES (67047, 'Pearlie', 'Palomar', 'PP7361@gsnail.com', 4);
+
+INSERT INTO students (id, first_name, last_name, email, class_id)
+VALUES (42490, 'Tillie', 'Brinlee', 'TillieBrinlee10@gsnail.com', 4);
+
+INSERT INTO students (id, first_name, last_name, email, class_id)
+VALUES (33442, 'Malika', 'Giannetti', 'Malika.Giannetti@gsnail.com', 2);
+
+INSERT INTO students (id, first_name, last_name, email, class_id)
+VALUES (82591, 'Collen', 'Margis', 'CMargis1980@gsnail.com', 2);
+
+INSERT INTO students (id, first_name, last_name, email, class_id)
+VALUES (61559, 'Leigha', 'Mani', 'LM1846@gsnail.com', 4);
+
+INSERT INTO students (id, first_name, last_name, email, class_id)
+VALUES (19006, 'Cristi', 'Funderburk', 'CFunderburk1988@coldmail.com', 4);
+
+INSERT INTO students (id, first_name, last_name, email, class_id)
+VALUES (52156, 'Arcelia', 'Rendler', 'ArceliaRendler75@gsnail.com', 2);
+
+INSERT INTO students (id, first_name, last_name, email, class_id)
+VALUES (51370, 'Penelope', 'Skemp', 'Penelope.Skemp@gsnail.com', 3);
+
+INSERT INTO students (id, first_name, last_name, email, class_id)
+VALUES (53818, 'Breana', 'Pree', 'Breana.Pree@coldmail.com', 3);
+
+INSERT INTO students (id, first_name, last_name, email, class_id)
+VALUES (45985, 'Emelia', 'Shum', 'EShum1988@gsnail.com', 1);
+
+INSERT INTO students (id, first_name, last_name, email, class_id)
+VALUES (92215, 'Aurora', 'Flavors', 'AuroraFlavors39@gsnail.com', 2);
+
+INSERT INTO students (id, first_name, last_name, email, class_id)
+VALUES (91494, 'Ali', 'Roskop', 'AR5364@gsnail.com', 4);
+
+INSERT INTO students (id, first_name, last_name, email, class_id)
+VALUES (53042, 'Lidia', 'Ashfield', 'LidiaAshfield31@gsnail.com', 1);
+
+INSERT INTO students (id, first_name, last_name, email, class_id)
+VALUES (48447, 'Edwin', 'Voigtlander', 'EdwinVoigtlander24@gsnail.com', 1);
+
+INSERT INTO students (id, first_name, last_name, email, class_id)
+VALUES (88153, 'Cleo', 'Delaurie', 'CD5205@gsnail.com', 4);
+
+INSERT INTO students (id, first_name, last_name, email, class_id)
+VALUES (25862, 'Larita', 'Wadden', 'LW6686@gsnail.com', 4);
+
+INSERT INTO students (id, first_name, last_name, email, class_id)
+VALUES (54061, 'Eric', 'Ximenez', 'EXimenez1990@inlook.com', 1);
+
+INSERT INTO students (id, first_name, last_name, email, class_id)
+VALUES (48361, 'Maricela', 'Haith', 'MHaith1990@gsnail.com', 3);
+
+INSERT INTO students (id, first_name, last_name, email, class_id)
+VALUES (52074, 'Lanny', 'Doop', 'Lanny.Doop@gsnail.com', 4);*/
+
+SELECT *
+FROM classes
+JOIN students
+  ON classes.id = students.class_id;
+
 
 
