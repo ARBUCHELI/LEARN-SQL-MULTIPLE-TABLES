@@ -361,12 +361,101 @@ INSERT INTO students (id, first_name, last_name, email, class_id)
 VALUES (48361, 'Maricela', 'Haith', 'MHaith1990@gsnail.com', 3);
 
 INSERT INTO students (id, first_name, last_name, email, class_id)
-VALUES (52074, 'Lanny', 'Doop', 'Lanny.Doop@gsnail.com', 4);*/
+VALUES (52074, 'Lanny', 'Doop', 'Lanny.Doop@gsnail.com', 4);
 
 SELECT *
 FROM classes
 JOIN students
   ON classes.id = students.class_id;
+
+CREATE TABLE months (
+  month INT
+)
+
+INSERT INTO months (month)
+VALUES (1);
+
+INSERT INTO months (month)
+VALUES (2);
+
+INSERT INTO months (month)
+VALUES (3);
+
+INSERT INTO months (month)
+VALUES (4);
+
+INSERT INTO months (month)
+VALUES (5);
+
+INSERT INTO months (month)
+VALUES (6);
+
+INSERT INTO months (month)
+VALUES (7);
+
+INSERT INTO months (month)
+VALUES (8);
+
+INSERT INTO months (month)
+VALUES (9);
+
+INSERT INTO months (month)
+VALUES (10);
+
+INSERT INTO months (month)
+VALUES (11);
+
+INSERT INTO months (month)
+VALUES (12);
+
+SELECT *
+FROM months;
+
+SELECT COUNT(*)
+FROM newspaper
+WHERE start_month <= 3 AND end_month >= 3;
+
+SELECT *
+FROM newspaper
+CROSS JOIN months;
+
+SELECT *
+FROM newspaper
+CROSS JOIN months
+WHERE start_month <= month AND end_month >= month;
+
+SELECT month,
+  COUNT(*)
+FROM newspaper
+CROSS JOIN months
+WHERE start_month <= month AND end_month >= month
+GROUP BY month;*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
