@@ -133,7 +133,7 @@ INSERT INTO customers (customer_id, customer_name, address)
 VALUES (9, 'Eryn Vilar', '56 Morton St.');
 
 INSERT INTO customers (customer_id, customer_name, address)
-VALUES (10, 'Jina Farraj', '100 Bryan Ave.');*/
+VALUES (10, 'Jina Farraj', '100 Bryan Ave.');
 
 SELECT *
 FROM orders;
@@ -166,4 +166,100 @@ FROM orders
 JOIN subscriptions
   ON orders.subscription_id = subscriptions.subscription_id
   WHERE subscriptions.description = 'Fashion Magazine';
+
+CREATE TABLE newspaper (
+    id INT,
+    first_name VARCHAR(256),
+    last_name VARCHAR(256),
+    email VARCHAR(256),
+    start_month INT,
+    end_month INT
+)
+
+INSERT INTO newspaper (id, first_name, last_name, email, start_month, end_month)
+VALUES (21253, 'Vinnie', 'Sagaser', 'Vinnie.Sagaser@yoohoo.com', 1, 5);
+
+INSERT INTO newspaper (id, first_name, last_name, email, start_month, end_month)
+VALUES (39075, 'Francesco', 'Maddron', 'FrancescoMaddron81@gsnail.com', 1, 5);
+
+INSERT INTO newspaper (id, first_name, last_name, email, start_month, end_month)
+VALUES (30648, 'Hellen', 'Broadwater', 'HBroadwater1992@gsnail.com', 2, 3);
+
+INSERT INTO newspaper (id, first_name, last_name, email, start_month, end_month)
+VALUES (71778, 'Ouida', 'Pardini', 'Ouida.Pardini@gsnail.com', 2, 6);
+
+INSERT INTO newspaper (id, first_name, last_name, email, start_month, end_month)
+VALUES (32436, 'Wenona', 'Tankson', 'WTankson1989@gsnail.com', 2, 6);
+
+INSERT INTO newspaper (id, first_name, last_name, email, start_month, end_month)
+VALUES (55580, 'Clora', 'Werking', 'CWerking1996@gsnail.com', 2, 5);
+
+INSERT INTO newspaper (id, first_name, last_name, email, start_month, end_month)
+VALUES (79652, 'Esteban', 'Pitner', 'Esteban.Pitner@gsnail.com', 2, 4);
+
+INSERT INTO newspaper (id, first_name, last_name, email, start_month, end_month)
+VALUES (11322, 'Carmel', 'Deasis', 'CD3012@gsnail.com', 2, 6);
+
+INSERT INTO newspaper (id, first_name, last_name, email, start_month, end_month)
+VALUES (73893, 'Jessi', 'Vinson', 'JessiVinson65@gsnail.com', 2, 6);
+
+INSERT INTO newspaper (id, first_name, last_name, email, start_month, end_month)
+VALUES (84750, 'Ayana', 'Hodapp', 'AHodapp1976@coldmail.com', 3, 6);*/
+
+/*CREATE TABLE online (
+    id INT,
+    first_name VARCHAR(256),
+    last_name VARCHAR(256),
+    email VARCHAR(256),
+    start_month INT,
+    end_month INT
+);
+
+INSERT INTO online (id, first_name, last_name, email, start_month, end_month)
+VALUES (39075, 'Francesco', 'Maddron', 'FrancescoMaddron81@gsnail.com', 1, 5);
+
+INSERT INTO online (id, first_name, last_name, email, start_month, end_month)
+VALUES (12770, 'Yer', 'Carpio', 'YerCarpio49@coldmail.com', 1, 4);
+
+INSERT INTO online (id, first_name, last_name, email, start_month, end_month)
+VALUES (21253, 'Vinnie', 'Sagaser', 'Vinnie.Sagaser@yoohoo.com', 1, 5);
+
+INSERT INTO online (id, first_name, last_name, email, start_month, end_month)
+VALUES (73893, 'Jessi', 'Vinson', 'JessiVinson65@gsnail.com', 2, 6);
+
+INSERT INTO online (id, first_name, last_name, email, start_month, end_month)
+VALUES (11322, 'Carmel', 'Deasis', 'CD3012@gsnail.com', 2, 6);
+
+INSERT INTO online (id, first_name, last_name, email, start_month, end_month)
+VALUES (55580, 'Clora', 'Werking', 'CWerking1996@gsnail.com', 2, 5);
+
+INSERT INTO online (id, first_name, last_name, email, start_month, end_month)
+VALUES (32436, 'Wenona', 'Tankson', 'WTankson1989@gsnail.com', 2, 6);
+
+INSERT INTO online (id, first_name, last_name, email, start_month, end_month)
+VALUES (30648, 'Hellen', 'Broadwater', 'HBroadwater1992@gsnail.com', 2, 3);
+
+INSERT INTO online (id, first_name, last_name, email, start_month, end_month)
+VALUES (31446, 'Collin', 'Dobos', 'CollinDobos57@coldmail.com', 3, 5);
+
+INSERT INTO online (id, first_name, last_name, email, start_month, end_month)
+VALUES (47660, 'Stephnie', 'Alsberry', 'StephnieAlsberry43@coldmail.com', 3, 5);*/
+
+SELECT *
+FROM newspaper;
+
+SELECT *
+FROM online;
+
+SELECT COUNT()
+FROM newspaper;
+
+SELECT COUNT()
+FROM online;
+
+SELECT COUNT(*)
+FROM newspaper
+JOIN online
+  ON newspaper.id = online.id;
+
 
